@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>RynexPE Network</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RynexPE Network</title>
 
 <style>
 
@@ -14,18 +16,33 @@ background:#0f172a;
 color:white;
 }
 
+/* NAVBAR */
+
 .navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 25px;
-background:#111827;
+padding:15px 30px;
+background:#020617;
+position:sticky;
+top:0;
 }
 
 .logo{
-font-size:22px;
+font-size:24px;
 font-weight:bold;
 color:#22c55e;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:15px;
 }
 
 .menu{
@@ -41,24 +58,94 @@ background:white;
 margin:4px;
 }
 
-.nav-links{
-display:flex;
-gap:20px;
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(135deg,#020617,#1e293b);
 }
 
-.nav-links a{
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+opacity:0.7;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:#22c55e;
 color:white;
-text-decoration:none;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
 }
 
-@media (max-width:768px){
+/* STATUS */
+
+.status{
+text-align:center;
+padding:40px;
+background:#020617;
+}
+
+.status-box{
+display:inline-block;
+padding:20px 40px;
+background:#111827;
+border-radius:10px;
+}
+
+/* RANKS */
+
+.ranks{
+padding:60px 20px;
+text-align:center;
+}
+
+.rank-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+
+.rank-card{
+background:#111827;
+padding:25px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.rank-card:hover{
+transform:translateY(-5px);
+}
+
+.rank-card button{
+margin-top:10px;
+padding:8px 20px;
+background:#22c55e;
+border:none;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
 
 .nav-links{
 display:none;
 position:absolute;
 top:60px;
 right:0;
-background:#111827;
+background:#020617;
 flex-direction:column;
 width:200px;
 padding:20px;
@@ -75,11 +162,11 @@ display:flex;
 
 <body>
 
+<!-- NAVBAR -->
+
 <div class="navbar">
 
-<div class="logo">
-RYNEXPE
-</div>
+<div class="logo">RYNEXPE</div>
 
 <div class="menu" onclick="toggleMenu()">
 <div></div>
@@ -102,15 +189,75 @@ RYNEXPE
 
 </div>
 
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>RYNEXPE NETWORK</h1>
+
+<p>play.rynexpe.com</p>
+
+<button>Join Server</button>
+
+</div>
+
+<!-- STATUS -->
+
+<div class="status">
+
+<div class="status-box">
+
+<h3>🟢 Server Online</h3>
+
+<p>Players: 0 / 200</p>
+
+<p>Version: 1.20</p>
+
+</div>
+
+</div>
+
+<!-- RANKS -->
+
+<div class="ranks">
+
+<h2>Popular Ranks</h2>
+
+<div class="rank-grid">
+
+<div class="rank-card">
+<h3>VIP</h3>
+<p>₹99</p>
+<button>Buy</button>
+</div>
+
+<div class="rank-card">
+<h3>MVP</h3>
+<p>₹299</p>
+<button>Buy</button>
+</div>
+
+<div class="rank-card">
+<h3>LEGEND</h3>
+<p>₹799</p>
+<button>Buy</button>
+</div>
+
+</div>
+
+</div>
+
 <script>
 
 function toggleMenu(){
-var x = document.getElementById("navLinks");
 
-if(x.style.display === "flex"){
-x.style.display = "none";
-}else{
-x.style.display = "flex";
+var x=document.getElementById("navLinks");
+
+if(x.style.display==="flex"){
+x.style.display="none";
+}
+else{
+x.style.display="flex";
 }
 
 }
