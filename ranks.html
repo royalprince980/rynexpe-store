@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Ranks - RynexPE</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:#020617;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#22c55e;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+}
+
+/* STORE */
+
+.store{
+padding:60px 20px;
+text-align:center;
+}
+
+.rank-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+}
+
+/* CARD */
+
+.rank-card{
+background:#111827;
+padding:30px;
+border-radius:15px;
+transition:0.3s;
+position:relative;
+overflow:hidden;
+}
+
+.rank-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(34,197,94,0.6);
+}
+
+/* RANK NAME */
+
+.rank-name{
+font-size:26px;
+margin-bottom:10px;
+}
+
+/* PERKS */
+
+.perks{
+font-size:14px;
+opacity:0.8;
+margin-top:10px;
+}
+
+.perks li{
+margin:5px 0;
+}
+
+/* PRICE */
+
+.price{
+font-size:22px;
+margin-top:15px;
+color:#22c55e;
+}
+
+/* BUTTON */
+
+.buy-btn{
+margin-top:15px;
+padding:10px 25px;
+background:#22c55e;
+border:none;
+border-radius:6px;
+color:white;
+cursor:pointer;
+font-size:15px;
+transition:0.2s;
+}
+
+.buy-btn:hover{
+background:#16a34a;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">RYNEXPE</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="ranks.html">Ranks</a>
+
+</div>
+
+</div>
+
+<div class="store">
+
+<h1>Server Ranks</h1>
+
+<div class="rank-grid">
+
+<!-- FLY -->
+
+<div class="rank-card">
+
+<div class="rank-name" style="color:#38bdf8;">Fly</div>
+
+<ul class="perks">
+
+<li>Fly in survival</li>
+<li>Special tag</li>
+<li>Access to fly command</li>
+
+</ul>
+
+<div class="price">₹50</div>
+
+<button class="buy-btn">Buy</button>
+
+</div>
+
+<!-- VIP -->
+
+<div class="rank-card">
+
+<div class="rank-name" style="color:#22c55e;">VIP</div>
+
+<ul class="perks">
+
+<li>3 Homes</li>
+<li>VIP Kit</li>
+<li>Colored Chat</li>
+
+</ul>
+
+<div class="price">₹100</div>
+
+<button class="buy-btn">Buy</button>
+
+</div>
+
+<!-- PREMIUM -->
+
+<div class="rank-card">
+
+<div class="rank-name" style="color:#facc15;">Premium</div>
+
+<ul class="perks">
+
+<li>5 Homes</li>
+<li>Premium Kit</li>
+<li>Priority Queue</li>
+
+</ul>
+
+<div class="price">₹200</div>
+
+<button class="buy-btn">Buy</button>
+
+</div>
+
+<!-- VENOM -->
+
+<div class="rank-card">
+
+<div class="rank-name" style="color:#a855f7;">Venom</div>
+
+<ul class="perks">
+
+<li>Exclusive Kit</li>
+<li>Custom Prefix</li>
+<li>More Rewards</li>
+
+</ul>
+
+<div class="price">₹300</div>
+
+<button class="buy-btn">Buy</button>
+
+</div>
+
+<!-- CREATIVE -->
+
+<div class="rank-card">
+
+<div class="rank-name" style="color:#f97316;">Creative</div>
+
+<ul class="perks">
+
+<li>Creative World Access</li>
+<li>World Edit Tools</li>
+<li>Build Anywhere</li>
+
+</ul>
+
+<div class="price">₹500</div>
+
+<button class="buy-btn">Buy</button>
+
+</div>
+
+<!-- MODERATOR -->
+
+<div class="rank-card">
+
+<div class="rank-name" style="color:#ef4444;">Moderator</div>
+
+<ul class="perks">
+
+<li>Moderation Tools</li>
+<li>Kick / Mute</li>
+<li>Staff Chat</li>
+
+</ul>
+
+<div class="price">₹1000</div>
+
+<button class="buy-btn">Buy</button>
+
+</div>
+
+<!-- LORD -->
+
+<div class="rank-card">
+
+<div class="rank-name" style="color:#06b6d4;">Lord</div>
+
+<ul class="perks">
+
+<li>10 Homes</li>
+<li>Lord Kit</li>
+<li>Special Prefix</li>
+
+</ul>
+
+<div class="price">₹1500</div>
+
+<button class="buy-btn">Buy</button>
+
+</div>
+
+<!-- ELITE -->
+
+<div class="rank-card">
+
+<div class="rank-name" style="color:#f43f5e;">Elite</div>
+
+<ul class="perks">
+
+<li>Elite Kit</li>
+<li>Exclusive Items</li>
+<li>More Coins</li>
+
+</ul>
+
+<div class="price">₹2000</div>
+
+<button class="buy-btn">Buy</button>
+
+</div>
+
+<!-- MASTER -->
+
+<div class="rank-card">
+
+<div class="rank-name" style="color:#84cc16;">Master</div>
+
+<ul class="perks">
+
+<li>Master Kit</li>
+<li>Huge Rewards</li>
+<li>Exclusive Commands</li>
+
+</ul>
+
+<div class="price">₹4000</div>
+
+<button class="buy-btn">Buy</button>
+
+</div>
+
+<!-- RYNEX -->
+
+<div class="rank-card">
+
+<div class="rank-name" style="color:#e879f9;">Rynex</div>
+
+<ul class="perks">
+
+<li>Ultimate Rank</li>
+<li>All Perks</li>
+<li>Special Crown</li>
+
+</ul>
+
+<div class="price">₹8000</div>
+
+<button class="buy-btn">Buy</button>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
