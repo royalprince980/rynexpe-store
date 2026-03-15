@@ -209,9 +209,9 @@ display:flex;
 
 <h3>🟢 Server Online</h3>
 
-<p>Players: 0 / 200</p>
+<p id="playerCount">Checking...</p>
 
-<p>Version: 1.20</p>
+<p id="serverVersion"></p>
 
 </div>
 
@@ -263,6 +263,28 @@ x.style.display="flex";
 }
 
 </script>
+fetch("https://api.mcsrvstat.us/2/play.rynexpe.com")
+.then(response => response.json())
+.then(data => {
 
+if(data.online){
+
+document.querySelector(".status-box h3").innerHTML="🟢 Server Online"
+
+document.getElementById("playerCount").innerHTML=
+"Players: "+data.players.online+" / "+data.players.max
+
+document.getElementById("serverVersion").innerHTML=
+"Version: "+data.version
+
+}
+
+else{
+
+document.querySelector(".status-box h3").innerHTML="🔴 Server Offline"
+
+}
+
+});
 </body>
 </html>
