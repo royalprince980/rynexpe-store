@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RynexPE Network</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+background:#111827;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#22c55e;
+}
+
+.menu{
+display:none;
+flex-direction:column;
+cursor:pointer;
+}
+
+.menu div{
+width:25px;
+height:3px;
+background:white;
+margin:4px;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+@media (max-width:768px){
+
+.nav-links{
+display:none;
+position:absolute;
+top:60px;
+right:0;
+background:#111827;
+flex-direction:column;
+width:200px;
+padding:20px;
+}
+
+.menu{
+display:flex;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">
+RYNEXPE
+</div>
+
+<div class="menu" onclick="toggleMenu()">
+<div></div>
+<div></div>
+<div></div>
+</div>
+
+<div class="nav-links" id="navLinks">
+
+<a href="#">Home</a>
+<a href="#">Ranks</a>
+<a href="#">Trial</a>
+<a href="#">Coins</a>
+<a href="#">Keys</a>
+<a href="#">Status</a>
+<a href="#">Leaderboard</a>
+<a href="#">Rules</a>
+
+</div>
+
+</div>
+
+<script>
+
+function toggleMenu(){
+var x = document.getElementById("navLinks");
+
+if(x.style.display === "flex"){
+x.style.display = "none";
+}else{
+x.style.display = "flex";
+}
+
+}
+
+</script>
+
+</body>
+</html>
